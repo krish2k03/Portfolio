@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sixth Sense's portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 150px;
+  padding: 16px;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 08px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+.tab1cards {
+  display: flex;
+  flex-direction: row;
+}
+/*.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/*.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* Fading animation 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size 
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+} */
+
+
+
+section{
+background-color:#258f6f}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #258f6f;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight:bold;
+  font-size:20px;
+}
+
+li a:hover {
+  background-color: #bdf0cb;
+}body{
+background-color:#bdf0cb}
+</style>
+</head>
+<body>
+<section>
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="About.html" target="_blank">About</a></li>
+  <li><a href="resume.html" target="_blank">Resume</a></li>
+  <li><a href="Achievements.html" target="_blank">Achievements</a></li>
+  <li><a href="projectpg.html" target="_blank">Projects Done</a></li>
+  <li><a href="contact.html" target="_blank">Contact</a></li>
+</ul></section>
+
+<div class="slide">
+  <img class="mySlides" src="portfolio.jpeg" style="width:100% ;height:400px">
+  <img class="mySlides" src="team1.jpeg" style="width:100% ;height: 400px">
+  <img class="mySlides" src="team2.jpeg" style="width:100%;height: 400px">
+</div>
+<h1 align="center" style="color:#258f6f;">Sixth Sense's Portfolio</h1>
+
+<div class="tab1cards">
+<table align="center">
+  <tr><td>
+<div class="card">
+  <a href="resume.html" target="_blank"><img src="resume1.jpeg" alt="Resume" style="width:100%"></a>
+  <div class="container">
+    <h4 align="center"><b>Resume</b></h4> 
+  </div></td>
+  <td>
+  <div class="card">
+  <a href="projectpg.html" target="_blank"><img src="project.jpeg" alt="Project" style="width:100%;height: 150px"></a>
+  <div class="container">
+    <h4 align="center"><b>Projects Done</b></h4> 
+  </div></td>
+  <td>
+  <div class="card">
+  <a href="achievements.html" target="_blank"><img src="achievements.jpeg" alt="Achievements" style="width:100%"></a>
+  <div class="container">
+    <h4 align="center"><b>Achievements</b></h4> 
+  </div></td>
+  <td>
+  <div class="card">
+  <a href="About.html" target="_blank"><img src="about.jpeg" alt="About" style="width:100%"></a>
+  <div class="container">
+    <h4 align="center"><b>About Us</b></h4> 
+  </div></td>
+  <td>
+  <div class="card">
+  <a href="contact.html" target="_blank"><img src="contact.jpeg" alt="Contact" style="width:100%"></a>
+    <h4 align="center"><b>Contact us</b></h4> 
+  </div></td></tr>
+</div>
+</section>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>
